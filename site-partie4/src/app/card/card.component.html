@@ -1,0 +1,27 @@
+<!-- <div class="card-5">
+  <h1>{{oneRecette.name}}</h1>
+  <h2>Pour quand? {{oneRecette.type}}</h2>
+      <h3>Vite fait? {{oneRecette.time}} minutes</h3>
+      <ul>Necessaire:
+        <li *ngFor="let ingredient of oneRecette.ingredientList">
+          {{ingredient.name}}; {{ingredient.price}} cts; {{ingredient.image}}
+        </li>
+        </ul>
+        <p>Comment qu'on fait? </p>
+      <p>{{oneRecette.instruction}}</p>
+</div> -->
+
+<div class="card-5" *ngFor="let recette of recetteList">
+  <h1>{{recette.name}}</h1>
+  <h2>Pour quand? {{recette.type}}</h2>
+      <h3>Vite fait? {{recette.time}} minutes</h3>
+      <ul>Necessaire:
+        <li *ngFor="let ingredient of twoRecette.ingredientList">
+          {{ingredient.name}}; {{ingredient.price}} cts; {{ingredient.image}}
+        </li>
+        </ul>
+        <p>Comment qu'on fait? </p>
+      <p>{{recette.instruction}}</p>
+</div>
+
+
